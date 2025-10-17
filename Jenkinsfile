@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-cred')
+        DOCKERHUB_CREDENTIALS = credentials('docker-hub-repo')
         IMAGE_NAME = " deeraj1986/react-app"
-        DEPLOY_SERVER = "ubuntu@<DEPLOYMENT_EC2_PUBLIC_IP>"
+        DEPLOY_SERVER = "ubuntu@47.129.51.50"
     }
 
     stages {
